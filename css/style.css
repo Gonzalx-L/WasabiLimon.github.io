@@ -1,0 +1,236 @@
+/** @format */
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+body {
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+  background-color: #f8f9f9;
+  overflow-x: hidden; /* Evita scroll horizontal */
+}
+
+/* Navbar */
+.navbar-custom {
+  transition: all 0.3s ease;
+  background-color: #0e0e0e;
+  padding: 1.5rem 2rem;
+}
+
+.navbar-custom.shrink {
+  padding: 0.5rem 2rem;
+}
+
+.navbar-brand {
+  font-family: "Playfair Display", serif;
+  font-size: 1.8rem;
+  color: #ffffff;
+}
+
+.nav-link {
+  color: #ffffff !important;
+  font-weight: 500;
+  margin-right: 1rem;
+}
+
+.nav-link:hover {
+  color: #f5a623 !important;
+}
+
+/* Hero Section */
+.hero {
+  position: relative;
+  height: 100vh;
+  background-image: url("/img/hero1.png");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  overflow: hidden;
+  padding: 2rem;
+}
+
+.hero-text {
+  color: white;
+  max-width: 1000px;
+  padding: 2rem;
+}
+
+.hero-text h1 {
+  font-family: "Playfair Display", serif;
+  font-size: 4.2rem;
+  margin-bottom: 1rem;
+}
+
+/* Scroll Section */
+.scroll-section {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("/img/hero2.png");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  padding: 2rem;
+  text-align: center;
+}
+
+.scroll-section h2 {
+  font-family: "Playfair Display", serif;
+  font-size: 3.5rem;
+  color: white;
+  text-align: center;
+  max-width: 900px;
+  line-height: 1.4;
+}
+
+.spacer {
+  height: 100vh;
+  background-color: #eee;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  color: #777;
+}
+
+@media (max-width: 768px) {
+  .hero-text h1 {
+    font-size: 2.5rem;
+  }
+  .scroll-section h2 {
+    font-size: 2.2rem;
+  }
+}
+/*<-------------------------- platos------------------------------->*/
+.contenedor-platos {
+  padding: 1rem 1rem;
+  background-color: #0e0909;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 80px;
+}
+
+/* Texto de la izquierda */
+/* Importante: quitar estilos de animación en el h2 completo */
+/* Texto alineado y limpio */
+.contenedor-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 600px;
+  padding: 1rem;
+}
+
+.contenedor-text h2 {
+  font-family: "Playfair Display", serif;
+  font-size: 2.8rem;
+  color: white;
+  text-align: center;
+  line-height: 1.5;
+  max-width: 100%;
+}
+
+.contenedor-img {
+  position: relative;
+  overflow: visible;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 400px;
+}
+
+/* Imágenes más grandes y uniformes */
+
+@media (max-width: 768px) {
+  .img-carrusel {
+    max-width: 90%;
+    max-height: 400px;
+  }
+}
+
+/* Personalización de botones */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-image: none;
+  width: 2.5rem;
+  height: 2.5rem;
+  background-color: #ee4f10;
+  mask: url("https://cdn-icons-png.flaticon.com/512/271/271220.png") center /
+    contain no-repeat;
+  -webkit-mask: url("https://cdn-icons-png.flaticon.com/512/271/271220.png")
+    center / contain no-repeat;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  top: 50%;
+  transform: translateY(-50%);
+  position: absolute;
+  z-index: 2;
+}
+
+.carousel-control-prev {
+  left: -5rem;
+}
+
+.carousel-control-next {
+  right: -5rem;
+}
+.img-carrusel {
+  max-width: 100%;
+  max-height: 550px;
+  width: auto;
+  height: 90%;
+  object-fit: cover;
+  border-radius: 1rem;
+  display: block;
+  margin: 0 auto;
+  transition: filter 0.3s ease;
+}
+.carousel-control-next-icon {
+  transform: rotate(180deg);
+}
+
+/* Hover para visibilidad de flechas */
+.carousel-control-prev:hover .carousel-control-prev-icon,
+.carousel-control-next:hover .carousel-control-next-icon {
+  background-color: #ffc107;
+}
+
+/*<!--footer-->*/
+
+footer {
+  background-color: #0e0e0e;
+  color: white;
+  padding: 2rem;
+  text-align: center;
+}
+#footer {
+  background-color: #0e0e0e;
+  color: white;
+  padding: 6rem;
+  text-align: center;
+  margin-top: -90px; /* Solapa con la sección anterior */
+  transition: background-color 0.6s ease;
+}
+
+footer .nav-link {
+  color: #aaa !important;
+}
+
+footer .nav-link:hover {
+  color: #f5a623 !important;
+}
+footer .social-icon {
+  color: #aaa;
+  font-size: 2rem;
+  margin: 0 1rem;
+}

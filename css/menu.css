@@ -1,0 +1,147 @@
+/** @format */
+
+/* ===== Reset y Base ===== */
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+body {
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+  background-color: #1c1c1c; /* fondo oscuro para esta página */
+  color: white;
+  overflow-x: hidden;
+}
+
+/* Hacer todos los párrafos blancos */
+body p {
+  color: #ffffff;
+}
+
+/* ===== Navbar ===== */
+.navbar-custom {
+  background-color: #0e0e0e;
+  transition: all 0.3s ease;
+  padding: 1.5rem 2rem;
+}
+.navbar-custom.shrink {
+  padding: 0.5rem 2rem;
+}
+.navbar-brand {
+  font-family: "Playfair Display", serif;
+  font-size: 1.8rem;
+  color: #ffffff;
+}
+.nav-link {
+  color: #ffffff !important;
+  font-weight: 500;
+  margin-right: 1rem;
+}
+.nav-link:hover {
+  color: #f5a623 !important;
+}
+
+/* ===== Sección Menú ===== */
+#menu {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  background-color: #1c1c1c;
+  color: white;
+}
+#menu .display-6 {
+  font-family: "Playfair Display", serif;
+  color: #ffffff;
+}
+#menu .fs-5 {
+  font-family: "Open Sans", sans-serif;
+  color: #ffffff;
+}
+
+/* Cards del menú */
+.menu-card {
+  background-color: #1c1c1c;
+  color: #fff;
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+.menu-card:hover {
+  transform: translateY(-0.5rem);
+}
+.menu-card .card-body {
+  background-color: #1c1c1c;
+  color: white;
+}
+.menu-card .card-title,
+.menu-card .card-text,
+.menu-card .fw-bold {
+  margin: 0.25rem 0;
+}
+
+/* Imágenes destacadas intercaladas */
+.menu-img-feature {
+  border-radius: 1rem;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+.menu-img-feature:hover {
+  transform: scale(1.03);
+}
+/* Fijar altura uniforme y crop automático de las imágenes de plato */
+.menu-card .card-img-top {
+  width: 100%;
+  height: 420px; /* ajusta este valor al alto que quieras */
+  object-fit: cover; /* recorta y centra la imagen */
+}
+
+/* Controles del carrusel */
+#menuCarousel .carousel-control-prev-icon,
+#menuCarousel .carousel-control-next-icon {
+  background-color: #ee4f10;
+  border-radius: 50%;
+  width: 2.5rem;
+  height: 2.5rem;
+}
+#menuCarousel .carousel-control-prev,
+#menuCarousel .carousel-control-next {
+  width: 5rem;
+}
+
+/* ===== Sección QR ===== */
+#qr {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  background-color: #1c1c1c;
+}
+#qr .display-6 {
+  font-family: "Playfair Display", serif;
+  color: #1c1c1c;
+}
+#qr .fs-5 {
+  font-family: "Open Sans", sans-serif;
+  color: #ffffff;
+}
+#qr img {
+  max-width: 200px;
+  margin: auto;
+  display: block;
+}
+
+/* ===== Footer ===== */
+#footer {
+  background-color: #0e0e0e;
+  color: #ffffff;
+  padding: 4rem 0;
+}
+#footer .nav-link {
+  color: #aaa !important;
+}
+#footer .nav-link:hover {
+  color: #f5a623 !important;
+}
+#footer i.bi {
+  font-size: 1.5rem;
+  margin: 0 0.5rem;
+}

@@ -1,0 +1,306 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Menú – Wasabi Limón</title>
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Playfair+Display:wght@600&display=swap"
+      rel="stylesheet" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet" />
+
+    <!-- Bootstrap Icons -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+      rel="stylesheet" />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./css/menu.css" />
+  </head>
+  <body>
+    <!-- Navbar reciclado -->
+    <nav
+      id="mainNavbar"
+      class="navbar navbar-expand-lg fixed-top navbar-custom">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">Wasabi Limón</a>
+        <button
+          class="navbar-toggler bg-light"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#inicio">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./nosotros.html ">Nosotros</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./menu.html">Menú</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#galeria">Galería</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Sección Menú con carrusel multi-item -->
+    <section id="menu" class="py-5" style="margin-top: 5rem">
+      <div class="container">
+        <h2 class="text-center mb-2 display-6" style="color: white">
+          Nuestro Menú
+        </h2>
+        <p class="text-center mb-4 text-white fs-5">
+          Explora nuestros sabores más aclamados
+        </p>
+
+        <div id="menuCarousel" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <!-- Slide 1 -->
+            <div class="carousel-item active">
+              <div class="row g-3">
+                <div class="col-6 col-md-3">
+                  <div class="card menu-card h-100 border-0">
+                    <img
+                      src="./img/p1.png"
+                      class="card-img-top img-fluid rounded"
+                      alt="Plato 1" />
+                    <div class="card-body bg-dark">
+                      <h5 class="card-title text-white">Ceviche Nikkei</h5>
+                      <p class="card-text small text-light">
+                        Salmón marinado, salsa cítrica y chips de plátano.
+                      </p>
+                      <p class="fw-bold text-warning">S/ 65.00</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-6 col-md-3">
+                  <div class="card menu-card h-100 border-0">
+                    <img
+                      src="./img/p2.png"
+                      class="card-img-top img-fluid rounded"
+                      alt="Plato 2" />
+                    <div class="card-body bg-dark">
+                      <h5 class="card-title text-white">Pariguela</h5>
+                      <p class="card-text small text-light">
+                        Caldo concentrado de mariscos preparado con pescado,
+                        cangrejo, calamares, camarones y conchas, sazonado con
+                        ají panca, hierbas aromáticas y un toque de vino blanco.
+                      </p>
+                      <p class="fw-bold text-warning">S/ 55.00</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-6 col-md-3 d-none d-md-block">
+                  <div class="card menu-card h-100 border-0">
+                    <img
+                      src="./img/p3.png"
+                      class="card-img-top img-fluid rounded"
+                      alt="Plato 3" />
+                    <div class="card-body bg-dark">
+                      <h5 class="card-title text-white">Tempuras</h5>
+                      <p class="card-text small text-light">
+                        Delicados trozos de langostino, pescado y vegetales
+                        frescos, rebosados en una ligera y crocante tempura
+                        japonesa. Servidos con salsa especial y limón. Una
+                        explosión de texturas y sabor en cada bocado.
+                      </p>
+                      <p class="fw-bold text-warning">S/ 50.00</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-6 col-md-3 d-none d-md-block">
+                  <div class="card menu-card h-100 border-0">
+                    <img
+                      src="./img/p4.png"
+                      class="card-img-top img-fluid rounded"
+                      alt="Plato 4" />
+                    <div class="card-body bg-dark">
+                      <h5 class="card-title text-white">Makis</h5>
+                      <p class="card-text small text-light">
+                        Rollos de arroz sazonado y alga nori rellenos de pescado
+                        fresco, mariscos y vegetales, combinando la tradición
+                        japonesa con un toque de sabor peruano. Servidos con
+                        salsa de la casa, wasabi y jengibre encurtido.
+                      </p>
+                      <p class="fw-bold text-warning">S/ 30.00</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Slide 2 -->
+            <div class="carousel-item">
+              <div class="row g-3">
+                <div class="col-6 col-md-3">
+                  <div class="card menu-card h-100 border-0">
+                    <img
+                      src="./img/p5.png"
+                      class="card-img-top img-fluid rounded"
+                      alt="Plato 5" />
+                    <div class="card-body bg-dark">
+                      <h5 class="card-title text-white">Pulpo al Olivo</h5>
+                      <p class="card-text small text-light">
+                        Finas láminas de pulpo tierno, bañadas en una cremosa
+                        salsa de aceitunas negras y un toque de limón.
+                        Acompañado de crocantes tostones y frescas hierbas. Un
+                        clásico de la fusión peruano-mediterránea.
+                      </p>
+                      <p class="fw-bold text-warning">S/ 40.00</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-6 col-md-3">
+                  <div class="card menu-card h-100 border-0">
+                    <img
+                      src="./img/p6.png"
+                      class="card-img-top img-fluid rounded"
+                      alt="Plato 6" />
+                    <div class="card-body bg-dark">
+                      <h5 class="card-title text-white">Arroz con Mariscos</h5>
+                      <p class="card-text small text-light">
+                        Arroz graneado salteado con una selección de mariscos
+                        frescos, ají amarillo, pimientos y arvejas, todo
+                        aromatizado con vino blanco y hierbas peruanas. Un
+                        clásico marino lleno de sabor y color, servido con salsa
+                        criolla y limón.
+                      </p>
+                      <p class="fw-bold text-warning">S/ 25</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-6 col-md-3 d-none d-md-block">
+                  <div class="card menu-card h-100 border-0">
+                    <img
+                      src="./img/p7.png"
+                      class="card-img-top img-fluid rounded"
+                      alt="Plato 7" />
+                    <div class="card-body bg-dark">
+                      <h5 class="card-title text-white">Pulpo acevichado</h5>
+                      <p class="card-text small text-light">
+                        Pulpo a la parrilla en finas láminas, bañado en cremosa
+                        salsa acevichada de ají y limón, acompañado de camote
+                        glaseado, cancha crocante y brotes frescos. Una fusión
+                        de tradición y sabor marino peruano.
+                      </p>
+                      <p class="fw-bold text-warning">S/ 25.00</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-6 col-md-3 d-none d-md-block">
+                  <div class="card menu-card h-100 border-0">
+                    <img
+                      src="./img/p8.png"
+                      class="card-img-top img-fluid rounded"
+                      alt="Plato 8" />
+                    <div class="card-body bg-dark">
+                      <h5 class="card-title text-white">Machupicchu</h5>
+                      <p class="card-text small text-light">
+                        Un cóctel vibrante y colorido inspirado en los paisajes
+                        peruanos: capas de licor de menta, crema de durazno,
+                        jugo de naranja y pisco, servido con hielo y decorado
+                        con una cereza. Refrescante, dulce y único, ideal para
+                        celebrar.
+                      </p>
+                      <p class="fw-bold text-warning">S/ 25.00</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#menuCarousel"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#menuCarousel"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección QR Carta -->
+    <section
+      id="qr"
+      class="py-5 text-center bg-light"
+      style="background-color: #1c1c1c; color: white">
+      <div class="container">
+        <h2 class="mb-3 display-6">Escanea nuestra carta</h2>
+        <p class="mb-4 text-muted fs-5">
+          Visualiza nuestros platos directamente en tu dispositivo
+        </p>
+        <div class="d-flex justify-content-center">
+          <img
+            src="./img/QRCODE.png"
+            alt="QR Carta"
+            class="img-fluid"
+            style="max-width: 200px" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer reciclado -->
+    <footer id="footer" class="mt-5 navbar-custom">
+      <div class="container text-center">
+        <p class="mb-1 text-white">
+          &copy; 2025 Wasabi Limón. Todos los derechos reservados.
+        </p>
+        <ul class="nav justify-content-center mb-2">
+          <li class="nav-item">
+            <a href="index.html#inicio" class="nav-link px-2 text-muted"
+              >Inicio</a
+            >
+          </li>
+          <li class="nav-item">
+            <a href="index.html#nosotros" class="nav-link px-2 text-muted"
+              >Nosotros</a
+            >
+          </li>
+          <li class="nav-item">
+            <a href="index.html#menu" class="nav-link px-2 text-muted">Menú</a>
+          </li>
+          <li class="nav-item">
+            <a href="index.html#galeria" class="nav-link px-2 text-muted"
+              >Galería</a
+            >
+          </li>
+        </ul>
+        <div>
+          <a href="#" class="text-white me-3"><i class="bi bi-facebook"></i></a>
+          <a href="#" class="text-white me-3"
+            ><i class="bi bi-instagram"></i
+          ></a>
+          <a href="#" class="text-white"><i class="bi bi-envelope"></i></a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Bootstrap JS & dependencies -->
+    <script src="./js/logica-menu.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

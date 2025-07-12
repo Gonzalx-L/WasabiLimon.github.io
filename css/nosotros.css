@@ -1,0 +1,122 @@
+/** @format */
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+body {
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+  background-color: #1c1c1c;
+  overflow-x: hidden; /* Evita scroll horizontal */
+}
+
+/* Navbar */
+.navbar-custom {
+  transition: all 0.3s ease;
+  background-color: #0e0e0e;
+  padding: 1.5rem 2rem;
+}
+
+.navbar-custom.shrink {
+  padding: 0.5rem 2rem;
+}
+
+.navbar-brand {
+  font-family: "Playfair Display", serif;
+  font-size: 1.8rem;
+  color: #ffffff;
+}
+
+.nav-link {
+  color: #ffffff !important;
+  font-weight: 500;
+  margin-right: 1rem;
+}
+
+.nav-link:hover {
+  color: #f5a623 !important;
+}
+
+/* ===== Sección Nosotros ===== */
+#nosotros {
+  background-color: #1c1c1c;
+}
+#nosotros p,
+#nosotros .timeline-content p {
+  line-height: 1.6;
+}
+.card-mv {
+  border-radius: 1rem;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3);
+}
+.timeline {
+  position: relative;
+  padding-left: 0;
+}
+.timeline::before {
+  content: "";
+  position: absolute;
+  left: 1.25rem;
+  top: 0;
+  bottom: 0;
+  width: 4px;
+  background: #ee4f10;
+}
+.timeline-item {
+  position: relative;
+  padding-left: 3rem;
+}
+.timeline-circle {
+  width: 1rem;
+  height: 1rem;
+  background: #ee4f10;
+  border-radius: 50%;
+  margin-top: 0.25rem;
+}
+.team-card {
+  border-radius: 1rem;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3);
+}
+.gallery-img {
+  transition: transform 0.3s ease;
+}
+.gallery-img:hover {
+  transform: scale(1.05);
+}
+/* Ajustes responsive */
+@media (max-width: 576px) {
+  #nosotros {
+    padding: 3rem 0;
+  }
+}
+/*<!--footer-->*/
+
+footer {
+  background-color: #0e0e0e;
+  color: white;
+  padding: 2rem;
+  text-align: center;
+}
+#footer {
+  background-color: #0e0e0e;
+  color: white;
+  padding: 6rem;
+  text-align: center;
+  margin-top: -90px; /* Solapa con la sección anterior */
+  transition: background-color 0.6s ease;
+}
+
+footer .nav-link {
+  color: #aaa !important;
+}
+
+footer .nav-link:hover {
+  color: #f5a623 !important;
+}
+footer .social-icon {
+  color: #aaa;
+  font-size: 2rem;
+  margin: 0 1rem;
+}
